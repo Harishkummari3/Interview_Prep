@@ -1,0 +1,47 @@
+What is Terraform.
+
+Terraform is an Infrastructure as Code  tool used to create, update, and manage cloud infrastructure using code instead of doing things manually. Terraform  automatically provisions and manages resources across cloud platforms like Azure, AWS, and GCP.
+
+
+Modules in Terraform..
+
+Terraform modules are reusable blocks of code that helps to reuse infrastructure configurations instead of writing the same code again and again.
+
+Using modules improves maintainability and enforces best practices in large Terraform projects.
+
+
+
+What is Terraform State file
+
+Terraform state file stores details of the infrastructure resources created and managed by Terraform.
+It helps Terraform track existing resources and apply only required changes.
+
+
+
+why we use terraform state lock
+
+Terraform state lock is used to restrict multiple developers modifying the state file at the same time.
+This avoids mistakes and keeps the infrastructure safe
+
+What is Terraform Backend
+
+Terraform backend is used to store the state file in a remote location like in azure storage account in aws we have s3.
+It helps teams work together safely by supporting state sharing and locking.
+
+What are for each and count in terraform?
+
+Count: Count is used to create multiple instances of the same resource. it creates resources based on a number.
+
+for each: for each is used to create multiple resources using a list or map. each resource has a unique key
+
+
+Terraform Commands:
+
+Init: Terraform init command is used to initialize the terraform project and downloads the required providers and modules
+Plan: plan is used to shows what changes terraform will make before applying them
+Apply: this command is used to create and updates infrastructure as per terraform code
+
+
+
+
+
