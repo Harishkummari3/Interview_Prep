@@ -1,0 +1,53 @@
+Docker:
+
+Basic Docker file Commands:
+
+FROM
+
+WORKDIR
+
+RUN
+
+COPY
+
+ADD
+
+CMD
+
+
+What is the Difference between CMD and ENTRY Point
+
+CMD command in Docker is used to execute the default commands while starting the container, we can modify after the execution
+ENTRY Point used to used to execute the main commands while starting the container it can't modify 
+
+How to Reduce Docker Image Size
+
+To Reduce docker image size basically we use light weight images, we use multistage builds, and also ignore the copying unwanted files into containers. Combining the multiple Run Commands
+
+Docker Volumes
+
+Docker volumes act like a backup of container data. it persist the container data outside the container. so when the container is not used or deleted, we can get the data from the volumes if required.
+
+What is the Difference between COPY and ADD
+
+Copy:  Copy commands in docker is used to copy the local files into containers
+
+ADD: Add command is works same as copy command to copy local files into containers and also URLs and tar files to the containers
+
+What is the difference between container and virtual machine
+
+Container: Container is a light weight host operating system, where it execute applications and it's dependencies.
+
+Virtual Machine: Virtual machines are like a physical hardware with fully automated operating system. here we can deploy our applications 
+
+
+What is Docker Swarm
+
+Docker Swarm is Container Orchestration tool that allows multiple docker nodes into single cluster. it helps deploying, scaling and managing containers across multiple servers.
+
+Docker Life Cycle:
+
+Docker life cycle is manages creating images, storing the images into repository, starting the containers from the images, stopping the container if no longer required.
+
+
+

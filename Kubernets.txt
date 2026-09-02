@@ -1,0 +1,38 @@
+Kubernets:
+
+Architecture of Kubernetes:
+
+Liveness Prob and Readiness Prob:
+
+Liveness Prob:
+
+Liveness prob is used to check whether the application is running or not if not running Kubernetes will automatically restart container
+
+Readiness Prob:
+
+
+Readiness prob is used to check if the application is ready to access the traffic or not, if it fails pod will removed from the service and wait until unless application ready, here didn't restart any process
+
+
+HPA (Horizontal Pod Autoscaler)
+
+Horizontal pod autoscaler is used to automatically scale the pods based on the metrics like CPU and Memory Usage
+
+ex: so the application traffic increase this will automatically increases the pods and decrease the nodes when the traffic down. this will help us to maintain high availability and improve performance of the  applications
+
+VPA (Vertical Pod Autoscaler)
+
+Vertical pod autoscaler is used to automatically adjust the CPU and Memory resources of a pod based on its usage
+
+ex: here we adjust the resource limits of a pod based on existing pod not like HPA
+
+
+Public Endpoints Private Endpoints:
+
+Public Endpoints:
+
+Public Endpoints allows azure resources to access over the internet using public ip address. using public ip we can access that resource from anyware
+
+Private Endpoints:
+
+Private Endpoints allows azure resources through a private network(vnet) using private IP. private ip doen't expose in interent and only secure connections
